@@ -12,6 +12,7 @@ This is a page about TFTP, its specifications and applications.
 
 ## Overview
 
+Trivial Transfer File Protocol, or TFTP is a lightweight file transfer protocol designed to be simple and easy to implement. For this reason, it lacks nearly all the features of a [traditional FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) server.
 
 <a name="specification"></a>
 
