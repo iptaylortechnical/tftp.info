@@ -1,3 +1,4 @@
-# Trivial File Transfer Protocal
+# Trivial File Transfer Protocol
 
-This is a page about the TFTP standard. 
+This is a page about TFTP, its specifications and applications.
+
