@@ -3,6 +3,7 @@
 
 @import "{{ site.theme }}";
 
-small {
+.disclaimer {
+  display: inline-block;
   line-height: .7em;
 }
