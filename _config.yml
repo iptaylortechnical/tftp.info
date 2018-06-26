@@ -1,5 +1,6 @@
 theme: jekyll-theme-minimal
-title: TFTP Information
-description: An informational document about TFTP. Maintained by Netscout with ❤️.
+title: false
+description: An informational document about TFTP.
 show_downloads: false
 logo: https://www.netscout.com/themes/custom/netscout/logo.svg
+attribution: Maintained by Netscout with ❤️.
