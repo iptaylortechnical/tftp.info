@@ -20,7 +20,7 @@ TFTP is often implemented on top of [User Datagram Protocol](https://en.wikipedi
 
 TFTP describes a lockstep system for transfering files in which the next data packet is only sent after the previous one has been acknowledged as being received. Therefore, the acknowledgment of a `DATA ` packet is an `ACK`, and the acknowledgment for an `ACK` is the next `DATA` packet.
 
-Each `DATA` packet is contains a block of 512 bytes. If the block is less than 512 bytes, it signals the end of the file.
+Each `DATA` packet is contains a block of 512 bytes. If the block is less than 512 bytes, it signals the end of the file. Error packets can also be send by either the sender or the receiver. Some can signal the early end of a transfer, while others may be merely to notify.
 
 <a name="specification"></a>
 
