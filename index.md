@@ -34,26 +34,32 @@ blk: Block number
 
 `RRQ/WRQ`:  
 ```
- opc   filename                      mode
-  2B   null term string          null term string
-| 01 | f.txt[null terminator]  | octet [null term]
-\x01 \x66\x2e\x74\x78\x74 0    \x6f\x63\x74\x65\x74 0
+  opc         filename                   mode
+  2B      null term string         null term string
+| 01  |  f.txt[null terminator] | octet [null term]
+\0\x01  \x66\x2e\x74\x78\x74\0   \x6f\x63\x74\x65\x74\0
+
+hex string: 0001662e747874006f6374657400
 ```
 
 `DATA`:  
 ```
- opc  blk   filedata  
-  2B   2B  
-| 03 | 01 | text | 0  
-\x03 \x01 \x74\x65\x78\x74 0  
+  opc   blk       filedata  
+  2B    2B  
+| 03  | 01 |      text | 0  
+\0\x03\0\x01 \x74\x65\x78\x74 \0  
+
+hex string: 000300017465787400
 ```
 
 `ACK`:  
 ```
- opc   blk
-  2B   2B
-| 04 | 01 | 
-\x04 \x01
+   opc   blk
+   2B    2B
+|  04  | 01 | 
+\0\x04 \0\x01
+
+hex string: 00040001
 ```
 
 ### Reference
